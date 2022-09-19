@@ -16,7 +16,7 @@ IF kode_item == "FE202201" Then
         nama_item = nasi goreng pedas
         harga_item = 20000 
     ELSE 
-        READ AND WRITE "kode_item" with string
+        Back to READ AND WRITE "kode_item" with string
     End IF
 IF kode_item == "FE202202" Then
     IF jenis_item == "A"
@@ -26,7 +26,7 @@ IF kode_item == "FE202202" Then
         nama_item = kwetiaw pedas
         harga_item = 18000 
     ELSE 
-        READ AND WRITE "kode_item" with string
+        Back to READ AND WRITE "kode_item" with string
     End IF
 IF kode_item == "FE202203" Then
     IF jenis_item == "A"
@@ -36,7 +36,7 @@ IF kode_item == "FE202203" Then
         nama_item = mie kuah seafood
         harga_item = 12000 
     ELSE 
-        READ AND WRITE "kode_item" with string
+        Back to READ AND WRITE "kode_item" with string
     End IF
 IF kode_item == "FE202204" Then
     IF jenis_item == "A"
@@ -46,7 +46,7 @@ IF kode_item == "FE202204" Then
         nama_item = teh anget
         harga_item = 3000 
     ELSE 
-        READ AND WRITE "kode_item" with string
+        Back to READ AND WRITE "kode_item" with string
     End IF
 IF kode_item == "FE202205" Then
     IF jenis_item == "A"
@@ -56,5 +56,18 @@ IF kode_item == "FE202205" Then
         nama_item = susu anget
         harga_item = 3000 
     ELSE 
-        READ AND WRITE "kode_item" with string
+        Back to READ AND WRITE "kode_item" with string
     End IF
+
+READ AND WRITE "jumlah_item" with number
+IF jumlah_item == 0
+     Back to READ AND WRITE "kode_item" with string
+ELSE
+    total_harga1 = jumlah_item * harga_item
+    total_harga2 = jumlah_item * harga_item
+    total_harga3 = jumlah_item * harga_item
+    total_harga4 = jumlah_item * harga_item
+    total_harga5 = jumlah_item * harga_item
+    jumlah_total = total_harga1 + total_harga2 + total_harga3 + total_harga4 + total_harga 5
+    READ jumlah_total
+End IF
