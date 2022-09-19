@@ -1,5 +1,6 @@
 PROGRAM CasierSystem
 
+
 Declare
     nama_item, kode item : string
     jumlah_item, harga_item : integer
@@ -16,7 +17,7 @@ IF kode_item == "FE202201" Then
         nama_item = nasi goreng pedas
         harga_item = 20000 
     ELSE 
-        Back to READ AND WRITE "kode_item" with string
+        back to READ AND WRITE "kode_item" with string
     End IF
 IF kode_item == "FE202202" Then
     IF jenis_item == "A"
@@ -26,7 +27,7 @@ IF kode_item == "FE202202" Then
         nama_item = kwetiaw pedas
         harga_item = 18000 
     ELSE 
-        Back to READ AND WRITE "kode_item" with string
+        back to READ AND WRITE "kode_item" with string
     End IF
 IF kode_item == "FE202203" Then
     IF jenis_item == "A"
@@ -36,7 +37,7 @@ IF kode_item == "FE202203" Then
         nama_item = mie kuah seafood
         harga_item = 12000 
     ELSE 
-        Back to READ AND WRITE "kode_item" with string
+        back to READ AND WRITE "kode_item" with string
     End IF
 IF kode_item == "FE202204" Then
     IF jenis_item == "A"
@@ -46,7 +47,7 @@ IF kode_item == "FE202204" Then
         nama_item = teh anget
         harga_item = 3000 
     ELSE 
-        Back to READ AND WRITE "kode_item" with string
+        back to READ AND WRITE "kode_item" with string
     End IF
 IF kode_item == "FE202205" Then
     IF jenis_item == "A"
@@ -56,7 +57,7 @@ IF kode_item == "FE202205" Then
         nama_item = susu anget
         harga_item = 3000 
     ELSE 
-        Back to READ AND WRITE "kode_item" with string
+        back to READ AND WRITE "kode_item" with string
     End IF
 
 READ AND WRITE "jumlah_item" with number
@@ -72,6 +73,7 @@ ELSE
     READ jumlah_total
 End IF
 
+
 READ AND WRITE "pembayaran" with number
 IF pembayaran >= 50000 Then
     harga_diskon = jumlah_total - (jumlah_total * 0,2)
@@ -83,5 +85,5 @@ write nama_item, total_harga, pembayaran, uang_kembali, jumlah_total
 
 READ AND WRITE "hitung ulang" with number
 WHILE "hitung_ulang" = 0
-    DISPLAY "End Process"
+    DISPLAY "end process"
 END
