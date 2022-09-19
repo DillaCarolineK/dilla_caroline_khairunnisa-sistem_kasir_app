@@ -1,5 +1,6 @@
 PROGRAM CasierSystem
 
+
 Declare
     nama_item, kode item : string
     jumlah_item, harga_item : integer
@@ -71,6 +72,7 @@ ELSE
     jumlah_total = total_harga1 + total_harga2 + total_harga3 + total_harga4 + total_harga 5
     READ jumlah_total
 End IF
+
 
 READ AND WRITE "pembayaran" with number
 IF pembayaran >= 50000 Then
