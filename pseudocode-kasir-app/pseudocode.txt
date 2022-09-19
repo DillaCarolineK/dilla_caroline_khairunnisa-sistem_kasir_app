@@ -85,5 +85,5 @@ write nama_item, total_harga, pembayaran, uang_kembali, jumlah_total
 
 READ AND WRITE "hitung ulang" with number
 WHILE "hitung_ulang" = 0
-    DISPLAY "End Process"
+    DISPLAY "end process"
 END
