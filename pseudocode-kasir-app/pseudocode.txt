@@ -1,0 +1,87 @@
+PROGRAM CasierSystem
+
+Declare
+    nama_item, kode item : string
+    jumlah_item, harga_item : integer
+    total_harga1, total_harga2, total_harga3, total_harga4, _total_harga5, harga_diskon, pembayaran, jumlah_total, uang_kembali : double
+    status : boolean 
+Define kode_item, jenis_item, nama_item, harga_item
+READ AND WRITE "kode_item" with string
+
+IF kode_item == "FE202201" Then
+    IF jenis_item == "A"
+        nama_item = nasi goreng biasa
+        harga_item = 18000 
+    ELSE IF jenis_item == "B"
+        nama_item = nasi goreng pedas
+        harga_item = 20000 
+    ELSE 
+        Back to READ AND WRITE "kode_item" with string
+    End IF
+IF kode_item == "FE202202" Then
+    IF jenis_item == "A"
+        nama_item = kwetiaw
+        harga_item = 15000 
+    ELSE IF jenis_item == "B"
+        nama_item = kwetiaw pedas
+        harga_item = 18000 
+    ELSE 
+        Back to READ AND WRITE "kode_item" with string
+    End IF
+IF kode_item == "FE202203" Then
+    IF jenis_item == "A"
+        nama_item = mie goreng seafood
+        harga_item = 15000 
+    ELSE IF jenis_item == "B"
+        nama_item = mie kuah seafood
+        harga_item = 12000 
+    ELSE 
+        Back to READ AND WRITE "kode_item" with string
+    End IF
+IF kode_item == "FE202204" Then
+    IF jenis_item == "A"
+        nama_item = es teh
+        harga_item = 5000 
+    ELSE IF jenis_item == "B"
+        nama_item = teh anget
+        harga_item = 3000 
+    ELSE 
+        Back to READ AND WRITE "kode_item" with string
+    End IF
+IF kode_item == "FE202205" Then
+    IF jenis_item == "A"
+        nama_item = es susu
+        harga_item = 5000 
+    ELSE IF jenis_item == "B"
+        nama_item = susu anget
+        harga_item = 3000 
+    ELSE 
+        Back to READ AND WRITE "kode_item" with string
+    End IF
+
+READ AND WRITE "jumlah_item" with number
+IF jumlah_item == 0 Then
+     Back to READ AND WRITE "kode_item" with string
+ELSE
+    total_harga1 = jumlah_item * harga_item
+    total_harga2 = jumlah_item * harga_item
+    total_harga3 = jumlah_item * harga_item
+    total_harga4 = jumlah_item * harga_item
+    total_harga5 = jumlah_item * harga_item
+    jumlah_total = total_harga1 + total_harga2 + total_harga3 + total_harga4 + total_harga 5
+    READ jumlah_total
+End IF
+
+READ AND WRITE "pembayaran" with number
+IF pembayaran >= 50000 Then
+    harga_diskon = jumlah_total - (jumlah_total * 0,2)
+ELSE
+    uang_kembali = pembayaran - jumlah_total
+End IF
+
+write nama_item, total_harga, pembayaran, uang_kembali, jumlah_total
+
+READ AND WRITE "hitung ulang" with number
+WHILE "hitung_ulang" = 0
+    DISPLAY "End Process"
+END
