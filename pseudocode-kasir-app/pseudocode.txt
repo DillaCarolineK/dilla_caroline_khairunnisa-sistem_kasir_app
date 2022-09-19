@@ -7,3 +7,54 @@ Declare
     status : boolean 
 Define kode_item, jenis_item, nama_item, harga_item
 READ AND WRITE "kode_item" with string
+
+IF kode_item == "FE202201" Then
+    IF jenis_item == "A"
+        nama_item = nasi goreng biasa
+        harga_item = 18000 
+    ELSE IF jenis_item == "B"
+        nama_item = nasi goreng pedas
+        harga_item = 20000 
+    ELSE 
+        READ AND WRITE "kode_item" with string
+    End IF
+IF kode_item == "FE202202" Then
+    IF jenis_item == "A"
+        nama_item = kwetiaw
+        harga_item = 15000 
+    ELSE IF jenis_item == "B"
+        nama_item = kwetiaw pedas
+        harga_item = 18000 
+    ELSE 
+        READ AND WRITE "kode_item" with string
+    End IF
+IF kode_item == "FE202203" Then
+    IF jenis_item == "A"
+        nama_item = mie goreng seafood
+        harga_item = 15000 
+    ELSE IF jenis_item == "B"
+        nama_item = mie kuah seafood
+        harga_item = 12000 
+    ELSE 
+        READ AND WRITE "kode_item" with string
+    End IF
+IF kode_item == "FE202204" Then
+    IF jenis_item == "A"
+        nama_item = es teh
+        harga_item = 5000 
+    ELSE IF jenis_item == "B"
+        nama_item = teh anget
+        harga_item = 3000 
+    ELSE 
+        READ AND WRITE "kode_item" with string
+    End IF
+IF kode_item == "FE202205" Then
+    IF jenis_item == "A"
+        nama_item = es susu
+        harga_item = 5000 
+    ELSE IF jenis_item == "B"
+        nama_item = susu anget
+        harga_item = 3000 
+    ELSE 
+        READ AND WRITE "kode_item" with string
+    End IF
