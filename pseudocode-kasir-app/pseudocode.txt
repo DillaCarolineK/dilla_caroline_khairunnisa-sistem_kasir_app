@@ -60,7 +60,7 @@ IF kode_item == "FE202205" Then
     End IF
 
 READ AND WRITE "jumlah_item" with number
-IF jumlah_item == 0
+IF jumlah_item == 0 Then
      Back to READ AND WRITE "kode_item" with string
 ELSE
     total_harga1 = jumlah_item * harga_item
@@ -71,3 +71,17 @@ ELSE
     jumlah_total = total_harga1 + total_harga2 + total_harga3 + total_harga4 + total_harga 5
     READ jumlah_total
 End IF
+
+READ AND WRITE "pembayaran" with number
+IF pembayaran >= 50000 Then
+    harga_diskon = jumlah_total - (jumlah_total * 0,2)
+ELSE
+    uang_kembali = pembayaran - jumlah_total
+End IF
+
+write nama_item, total_harga, pembayaran, uang_kembali, jumlah_total
+
+READ AND WRITE "hitung ulang" with number
+WHILE "hitung_ulang" = 0
+    DISPLAY "End Process"
+END
