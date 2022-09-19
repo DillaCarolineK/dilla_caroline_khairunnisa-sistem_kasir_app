@@ -1,2 +1,3 @@
 # dilla_caroline_khairunnisa-sistem_kasir_app
-Flowchart dan pseudocode mengenai aplikasi sistem kasir sederhana
+
+Flowchart dan Pseudocode mengenai aplikasi sistem kasir rumah makan sederhana
