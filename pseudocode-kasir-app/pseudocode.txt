@@ -1,2 +1,9 @@
 PROGRAM CasierSystem
 
+Declare
+    nama_item, kode item : string
+    jumlah_item, harga_item : integer
+    total_harga1, total_harga2, total_harga3, total_harga4, _total_harga5, harga_diskon, pembayaran, jumlah_total, uang_kembali : double
+    status : boolean 
+Define kode_item, jenis_item, nama_item, harga_item
+READ AND WRITE "kode_item" with string
